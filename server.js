@@ -68,3 +68,7 @@ app.use("/public", express.static("./public"))
 app.listen(80);
 
 console.log("listening on http://localhost:80");
+
+const port = process.env.PORT || 80;
+app.listen(port);
+console.log(`listening on http://localhost:${port}`);
