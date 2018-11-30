@@ -28,7 +28,7 @@ const app = express();
 
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "index.html"))
-})
+});
 
 app.get("/compliment", function(req, res) {
     res
@@ -36,7 +36,7 @@ app.get("/compliment", function(req, res) {
             compliment: getRandomCompliment()
         })
         .end();
-})
+});
 
 const insults = [
     "your hair is oily",
@@ -61,14 +61,11 @@ app.get("/insult", function(req, res) {
             insult: getRandomInsult()
         })
         .end();
-})
+});
 
-app.use("/public", express.static("./public"))
+app.use("/public", express.static("./public"));
 
-app.listen(80);
 
-console.log("listening on http://localhost:80");
-
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 app.listen(port);
 console.log(`listening on http://localhost:${port}`);
