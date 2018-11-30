@@ -10,8 +10,8 @@ document
             })
             .catch(function(err) {
                 console.error(err);
-            })
-    })
+            });
+    });
 
 document
     .querySelector(".request-insult")
@@ -25,8 +25,8 @@ document
             })
             .catch(function(err) {
                 console.error(err);
-            })
-    })
+            });
+    });
 
 
 const box = popmotion.styler(document.querySelector('.box'))
