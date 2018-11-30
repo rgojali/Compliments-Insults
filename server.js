@@ -20,7 +20,7 @@ const compliments = [
 ];
 
 function getRandomCompliment() {
-    const randomIndex = Math.floor(Math.random() * compliments.length)
+    const randomIndex = Math.floor(Math.random() * compliments.length);
     return compliments[randomIndex];
 }
 
@@ -51,7 +51,7 @@ const insults = [
 ];
 
 function getRandomInsult() {
-    const randomIndex = Math.floor(Math.random() * insults.length)
+    const randomIndex = Math.floor(Math.random() * insults.length);
     return insults[randomIndex];
 }
 
